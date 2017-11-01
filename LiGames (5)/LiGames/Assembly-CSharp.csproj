@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{B6BBF05E-CC70-7811-DAA5-4808DCEB71D3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_3;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_32;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_HAS_GOOGLEVR</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\GameInstaller.cs" />
+     <Compile Include="Assets\Zombies\Scripts\GameState\CameraMovementConfig.cs" />
+     <Compile Include="Assets\Zombies\Scripts\GameState\FieldInfo.cs" />
+     <Compile Include="Assets\Zombies\Scripts\GameState\GlobalInfo.cs" />
+     <Compile Include="Assets\Zombies\Scripts\GameState\SaveLoadManager.cs" />
+     <Compile Include="Assets\Zombies\Scripts\GameState\SaveableBehavior.cs" />
+     <Compile Include="Assets\Zombies\Scripts\GameState\Settings.cs" />
+     <Compile Include="Assets\Zombies\Scripts\GameState\State.cs" />
+     <Compile Include="Assets\Zombies\Scripts\GameState\StateDefaultInfo.cs" />
+     <Compile Include="Assets\Zombies\Scripts\GameState\StateVisual.cs" />
+     <Compile Include="Assets\Zombies\Scripts\GlobalInfoAccessor.cs" />
+     <Compile Include="Assets\Zombies\Scripts\Installers\GlobalInstaller.cs" />
+     <Compile Include="Assets\Zombies\Scripts\InventoryInitializator.cs" />
+     <Compile Include="Assets\Zombies\Scripts\Map\CarInstantiator.cs" />
+     <Compile Include="Assets\Zombies\Scripts\Map\Location\BorderLocation.cs" />
+     <Compile Include="Assets\Zombies\Scripts\Map\Location\Location.cs" />
+     <Compile Include="Assets\Zombies\Scripts\Map\Location\LocationDescriptor.cs" />
+     <Compile Include="Assets\Zombies\Scripts\Map\Location\Path.cs" />
+     <Compile Include="Assets\Zombies\Scripts\Map\LocationMarkerUIControl.cs" />
+     <Compile Include="Assets\Zombies\Scripts\Map\Management\MapGenerator.cs" />
+     <Compile Include="Assets\Zombies\Scripts\Map\Management\TravellingManager.cs" />
+     <Compile Include="Assets\Zombies\Scripts\Map\MapMarkerInstantiator.cs" />
+     <Compile Include="Assets\Zombies\Scripts\Map\MapPerformanceImprover.cs" />
+     <Compile Include="Assets\Zombies\Scripts\Map\NavMeshBaker.cs" />
+     <Compile Include="Assets\Zombies\Scripts\Map\Tile\Tile.cs" />
+     <Compile Include="Assets\Zombies\Scripts\Map\Tile\TileCompatibility.cs" />
+     <Compile Include="Assets\Zombies\Scripts\Map\Tile\TileDescriptor.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\BackpackContents.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Car.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Controllers\PersonActionController.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Controllers\ZombieController.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Field\Field.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Field\FieldCell.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Generator.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Graphics\BulletTrace.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Graphics\GridDrawer.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Graphics\Illumination.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Instantiator.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Management\GameInfo.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Management\LocationManager.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Management\PersonActionManager.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Management\PersonStepManager.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Management\ResourceManager.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\PersonObserver.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Resource\GunResourceInfo.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Resource\GunTemplate.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Resource\MedicalInfo.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Resource\ResourceIcon.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Resource\ResourceInfo.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Resource\ResourcePhysic.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\Spawner.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\UI\CellDescriptor.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\UI\DialogWindow.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\UI\HealthBar.cs" />
+     <Compile Include="Assets\Zombies\Scripts\OnLocation\UI\LoadingAnimator.cs" />
+     <Compile Include="Assets\Zombies\Scripts\PersonDescriptor.cs" />
+     <Compile Include="Assets\Zombies\Scripts\Traveling\IncreaseAnimation.cs" />
+     <Compile Include="Assets\Zombies\Scripts\Traveling\LocationPoint.cs" />
+     <Compile Include="Assets\Zombies\Scripts\Traveling\MapManager.cs" />
+     <Compile Include="Assets\Zombies\Scripts\Traveling\Stub.cs" />
+     <Compile Include="Assets\Zombies\Scripts\UI\GunSlotUI.cs" />
+     <Compile Include="Assets\Zombies\Scripts\UI\InventoryUIController.cs" />
+     <Compile Include="Assets\Zombies\Scripts\UI\PersonManagmentUI.cs" />
+     <Compile Include="Assets\Zombies\Scripts\UI\PersonSlotUI.cs" />
+     <Compile Include="Assets\Zombies\Scripts\UI\SlotUI.cs" />
+     <Compile Include="Assets\Zombies\Scripts\UI\Velum.cs" />
+     <None Include="Assets\SimpleApocalypse\ReadMe.txt" />
+     <None Include="Assets\SimplePeople\Changelog.txt" />
+     <None Include="Assets\Plugins\Zenject\LICENSE.txt" />
+     <None Include="Assets\Plugins\Dark Age UI for UGUI\Changelog.txt" />
+     <None Include="Assets\Plugins\Zenject\Version.txt" />
+     <None Include="Assets\SimpleApocalypse\_Materials\UnlitVertexColour_Alpha.shader" />
+     <None Include="Assets\Plugins\Dark Age UI for UGUI\Readme.txt" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>D:/GAMES/Developing/Unity/2017/LiGames/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{C344C805-AC0E-715E-3798-611795304576}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
